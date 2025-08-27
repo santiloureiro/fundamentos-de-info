@@ -29,3 +29,14 @@ else:
     >= Mayor o igual
     <= Menor o igual
     != Distinto
+
+## Operadores Lógicos
+Siempre se resuelven de a pares.
+    AND (Y)
+    OR (O)
+    NOT (NO)
+
+
+# Ejercicios para la proxima:
+
+TP3 7, 8 y 10
