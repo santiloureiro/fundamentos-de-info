@@ -31,7 +31,7 @@ if (mes % 4 != 0) or (mes % 4 == 0 and mes % 100 == 0):
     febrero = 28
 print("Fecha original: ", dia, "de ", mes, "de ", año)
 while diasRestantes > 0:
-    checkearCambioDeMes = (mes == 1 and dia == enero) or (mes == 2 and dia == febrero) or (mes == 3 and dia == marzo) or (mes == 4 and dia == abril) or (mes == 5 and dia == mayo) or (mes == 6 and dia == junio) or (mes == 7 and dia == julio) or (mes == 8 and dia == agosto) or (mes == 9 and dia == septiembre) or (mes == 10 and dia == octubre) or (mes == 11 and dia == noviembre) or (mes == 12 and dia == diciembre) 
+    checkearCambioDeMes = (mes == 1 and dia == enero) or (mes == 2 and dia == febrero) or (mes == 3 and dia == marzo) or (mes == 4 and dia == abril) or (mes == 5 and dia == mayo) or (mes == 6 and dia == junio) or (mes == 7 and dia == julio) or (mes == 8 and dia == agosto) or (mes == 9 and dia == septiembre) or (mes == 10 and dia == octubre) or (mes == 11 and dia == noviembre) 
     if(mes == 12 and dia == diciembre):
         dia = 1
         mes = 1
