@@ -14,7 +14,7 @@
 montoAAhorrar = int(input("Cuanto se quiere ahorrar? "))
 
 # Bucle hasta que el usuario ingrese una cantidad valida para el ahorro (Entre 80.000 y 100.000)
-while not (montoAAhorrar > 80000 and montoAAhorrar < 100000):
+while not (montoAAhorrar >= 80000 and montoAAhorrar <= 100000):
     montoAAhorrar = int(input("El monto debe estar entre $80.000 y $100.000 | Cuanto se quiere ahorrar? "))
 
 montoAhorro = int(input("Ingresar primer monto a para el ahorro: "))
@@ -44,7 +44,8 @@ while totalAhorro <= montoAAhorrar and montoAhorro != -1:
             menorDeposito = montoAhorro
             indiceMenorDeposito = cantDepositos
         print("CANTIDAD RESTANTE | ", montoAAhorrar - totalAhorro)
-        montoAhorro = int(input("Ingresar nuevo monto de ahorro o salir con -1: "))
+        if(totalAhorro < montoAAhorrar):
+            montoAhorro = int(input("Ingresar nuevo monto de ahorro o salir con -1: "))
     else:
         print("CANTIDAD RESTANTE | ", montoAAhorrar - totalAhorro)
         montoAhorro = int(input("Ingresar nuevo monto valido (entre $5000 y $10000): "))        
@@ -52,6 +53,7 @@ while totalAhorro <= montoAAhorrar and montoAhorro != -1:
 promedioDepositos = totalAhorro / cantDepositos
 
 # Reportes
+print("Se cantidad a ahorrar $", montoAAhorrar)
 print("Se deposito $",totalAhorro)
 print("Se realizaron", cantDepositos, "depositos.")
 print("El promedio de los depositos es: ", promedioDepositos)

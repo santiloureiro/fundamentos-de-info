@@ -24,15 +24,18 @@ indiceMenorNota = 0
 mayorNota = 0
 indiceMayorNota = 0
 
+# Carga notas hasta que el usuario ingrese -1 para terminar el registro
 while nota != -1:
+    # Checkea si las notas cargadas son validas (>= 1 y <= 10)
     if nota <= 10 and nota >= 1:
         cantNotas += 1
         if nota >= 4:
             cantAprobados += 1
         else: 
             cantReprobados += 1
+        # Registra una nueva menor o mayor nota
         if nota > mayorNota:
-            mayorNota = nota
+            mayorNota = nota            
             indiceMayorNota = cantNotas 
         if nota < menorNota or menorNota == 0:
             menorNota = nota
